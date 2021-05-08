@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DishListTableViewCell" rowHeight="113" id="KGk-i7-Jjw" customClass="DishListTableViewCell" customModule="YummieFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FUQ-7c-GSl" customClass="CardView" customModule="YummieFood" customModuleProvider="target">
+                        <rect key="frame" x="16" y="10" width="288" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WEx-SK-fMd">
+                                <rect key="frame" x="16" y="16" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3ss-SY-c2E"/>
+                                    <constraint firstAttribute="width" constant="50" id="Rvm-at-23b"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bbe-FY-23a">
+                                <rect key="frame" x="74" y="16" width="41.5" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nas-7c-gSa">
+                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhW-FK-ttA">
+                                        <rect key="frame" x="0.0" y="34" width="41.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WEx-SK-fMd" firstAttribute="top" secondItem="FUQ-7c-GSl" secondAttribute="top" constant="16" id="3df-na-ho1"/>
+                            <constraint firstAttribute="bottom" secondItem="WEx-SK-fMd" secondAttribute="bottom" constant="16" id="E7n-eQ-HY4"/>
+                            <constraint firstItem="WEx-SK-fMd" firstAttribute="leading" secondItem="FUQ-7c-GSl" secondAttribute="leading" constant="16" id="YdE-AA-eTJ"/>
+                            <constraint firstItem="Bbe-FY-23a" firstAttribute="bottom" secondItem="WEx-SK-fMd" secondAttribute="bottom" id="fJA-vo-TBY"/>
+                            <constraint firstItem="Bbe-FY-23a" firstAttribute="leading" secondItem="WEx-SK-fMd" secondAttribute="trailing" constant="8" id="ugE-kC-f2B"/>
+                            <constraint firstItem="Bbe-FY-23a" firstAttribute="top" secondItem="WEx-SK-fMd" secondAttribute="top" id="yN0-X9-CCy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="FUQ-7c-GSl" secondAttribute="trailing" constant="16" id="SFO-E9-uwa"/>
+                    <constraint firstAttribute="trailing" secondItem="FUQ-7c-GSl" secondAttribute="trailing" constant="16" id="VI2-cI-Y1h"/>
+                    <constraint firstAttribute="bottom" secondItem="FUQ-7c-GSl" secondAttribute="bottom" constant="10" id="WOd-sc-2yc"/>
+                    <constraint firstItem="FUQ-7c-GSl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="dHt-sB-h46"/>
+                    <constraint firstItem="FUQ-7c-GSl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="uqD-jH-jxV"/>
+                    <constraint firstItem="FUQ-7c-GSl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zaN-4X-aVh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="descriptionLbl" destination="uhW-FK-ttA" id="Ahy-kT-WM5"/>
+                <outlet property="dishImageView" destination="WEx-SK-fMd" id="2eM-98-pAb"/>
+                <outlet property="titleLbl" destination="Nas-7c-gSa" id="PJ4-BM-Odq"/>
+            </connections>
+            <point key="canvasLocation" x="-214.49275362318843" y="100.44642857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
